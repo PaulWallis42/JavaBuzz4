@@ -34,6 +34,11 @@ describe('Javabuzz', function() {
       expect(javabuzz.isDivisibleByFive(7)).toBe(false);
     });
 
+    it('not divisible by 15',  function() {
+      javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByFifteen(6)).toBe(false);
+    });
+
   });
 
 });

@@ -10,5 +10,6 @@ Javabuzz.prototype.isDivisibleByFive = function(number) {
 };
 
 Javabuzz.prototype.isDivisibleByFifteen = function (number) {
-  return (true)
+  return (number % 15 === 0);
 };
+
