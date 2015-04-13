@@ -9,10 +9,6 @@ describe('Javabuzz', function() {
       expect(javabuzz.isDivisibleByThree(3)).toBe(true);
     });
 
-    it('not divisible by 3', function() {
-      javabuzz = new Javabuzz();
-      expect(javabuzz.isDivisibleByThree(1)).toBe(false);      
-    });
 
     it('divisible by 5', function() {
       javabuzz = new Javabuzz();
@@ -21,5 +17,18 @@ describe('Javabuzz', function() {
 
   });
 
+  describe('knows when a number is NOT', function() {
+
+    it('not divisible by 3', function() {
+      javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByThree(1)).toBe(false);
+    });
+
+    it('not divisible by 5', function() {
+      javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByFive(7)).toBe(false);
+    });
+
+  });
 
 });
