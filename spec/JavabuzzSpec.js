@@ -15,6 +15,11 @@ describe('Javabuzz', function() {
       expect(javabuzz.isDivisibleByFive(5)).toBe(true);
     });
 
+    it('divisible by 15', function() {
+      javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByFifteen(15)).toBe(true);
+    });
+
   });
 
   describe('knows when a number is NOT', function() {
