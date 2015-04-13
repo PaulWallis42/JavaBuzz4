@@ -14,6 +14,11 @@ describe('Javabuzz', function() {
       expect(javabuzz.isDivisibleByThree(1)).toBe(false);      
     });
 
+    it('divisible by 5', function() {
+      javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByFive(5)).toBe(true);
+    });
+
   });
 
 
